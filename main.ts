@@ -29,14 +29,14 @@ basic.forever(function () {
     slot3Value = ScratchMore.getSlot(Slot.SLOT3)
     splitToBools(slot3Value)
     if (ledLeft == 1) {
-        carcotrol.setLED(Position.Left, carcotrol.colors(RGBColors.Red))
+        carcotrol.setLED(Position.Left, carcotrol.colors(RGBColors.White))
         carcotrol.setNeoPixelColor(0, carcotrol.colors(RGBColors.Orange))
     } else {
         carcotrol.setLED(Position.Left, carcotrol.colors(RGBColors.Black))
         carcotrol.setNeoPixelColor(0, carcotrol.colors(RGBColors.Black))
     }
     if (ledRight == 1) {
-        carcotrol.setLED(Position.Right, carcotrol.colors(RGBColors.Red))
+        carcotrol.setLED(Position.Right, carcotrol.colors(RGBColors.White))
         carcotrol.setNeoPixelColor(1, carcotrol.colors(RGBColors.Orange))
     } else {
         carcotrol.setLED(Position.Right, carcotrol.colors(RGBColors.Black))

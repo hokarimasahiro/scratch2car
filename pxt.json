@@ -5,7 +5,6 @@
         "core": "*",
         "bluetooth": "*",
         "pxt-scratch-more": "github:yokobond/pxt-scratch-more#v0.3.2",
-        "maqueen": "github:dfrobot/pxt-maqueen#2873abfa0e6ef1ac903b9f493453b78606445b63",
         "pxt-carcntrol": "github:hokarimasahiro/pxt-carcontrol#8d421887e92ebca5eb1df2ad4fa80c85b30be2a2"
     },
     "files": [
