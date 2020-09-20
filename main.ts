@@ -5,10 +5,10 @@ ScratchMore.startService(function () {
 	
 })
 function splitToBools (value: number) {
-    ledLeft = Math.floor(value / 8)
-    ledRight = Math.floor((value - ledLeft * 8) / 4)
-    patrolLeft = Math.floor((value - ledLeft * 8 - ledRight * 4) / 2)
-    patrolRight = value - ledLeft * 8 - ledRight * 4 - patrolLeft * 2
+    ledLeft = logic.bittestN(value, 3)
+    ledRight = logic.bittestN(value, 2)
+    patrolLeft = logic.bittestN(value, 1)
+    patrolRight = logic.bittestN(value, 1)
 }
 let patrolRight = 0
 let patrolLeft = 0
