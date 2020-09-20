@@ -50,16 +50,16 @@ basic.forever(function () {
         if (carType2 == carcotrol.car(carType.Tinybit)) {
             carcotrol.setNeoPixelColor(1, carcotrol.colors(RGBColors.Orange))
         } else {
-            carcotrol.setNeoPixelColor(2, carcotrol.colors(RGBColors.Orange))
-            carcotrol.setNeoPixelColor(3, carcotrol.colors(RGBColors.Green))
+            carcotrol.setNeoPixelColor(3, carcotrol.colors(RGBColors.Orange))
+            carcotrol.setNeoPixelColor(2, carcotrol.colors(RGBColors.Green))
         }
     } else {
         carcotrol.setLED(Position.Right, carcotrol.colors(RGBColors.Black))
         if (carType2 == carcotrol.car(carType.Tinybit)) {
             carcotrol.setNeoPixelColor(1, carcotrol.colors(RGBColors.Black))
         } else {
-            carcotrol.setNeoPixelColor(2, carcotrol.colors(RGBColors.Black))
             carcotrol.setNeoPixelColor(3, carcotrol.colors(RGBColors.Black))
+            carcotrol.setNeoPixelColor(2, carcotrol.colors(RGBColors.Black))
         }
     }
     patrolLeft = carcotrol.Line_Sensor(Position.Left)
