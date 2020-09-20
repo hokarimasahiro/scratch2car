@@ -30,17 +30,37 @@ basic.forever(function () {
     splitToBools(slot3Value)
     if (ledLeft == 1) {
         carcotrol.setLED(Position.Left, carcotrol.colors(RGBColors.White))
-        carcotrol.setNeoPixelColor(0, carcotrol.colors(RGBColors.Orange))
+        if (carType2 == carcotrol.car(carType.Tinybit)) {
+            carcotrol.setNeoPixelColor(0, carcotrol.colors(RGBColors.Orange))
+        } else {
+            carcotrol.setNeoPixelColor(0, carcotrol.colors(RGBColors.Orange))
+            carcotrol.setNeoPixelColor(1, carcotrol.colors(RGBColors.Green))
+        }
     } else {
         carcotrol.setLED(Position.Left, carcotrol.colors(RGBColors.Black))
-        carcotrol.setNeoPixelColor(0, carcotrol.colors(RGBColors.Black))
+        if (carType2 == carcotrol.car(carType.Tinybit)) {
+            carcotrol.setNeoPixelColor(0, carcotrol.colors(RGBColors.Black))
+        } else {
+            carcotrol.setNeoPixelColor(0, carcotrol.colors(RGBColors.Black))
+            carcotrol.setNeoPixelColor(1, carcotrol.colors(RGBColors.Black))
+        }
     }
     if (ledRight == 1) {
         carcotrol.setLED(Position.Right, carcotrol.colors(RGBColors.White))
-        carcotrol.setNeoPixelColor(1, carcotrol.colors(RGBColors.Orange))
+        if (carType2 == carcotrol.car(carType.Tinybit)) {
+            carcotrol.setNeoPixelColor(1, carcotrol.colors(RGBColors.Orange))
+        } else {
+            carcotrol.setNeoPixelColor(2, carcotrol.colors(RGBColors.Orange))
+            carcotrol.setNeoPixelColor(3, carcotrol.colors(RGBColors.Green))
+        }
     } else {
         carcotrol.setLED(Position.Right, carcotrol.colors(RGBColors.Black))
-        carcotrol.setNeoPixelColor(1, carcotrol.colors(RGBColors.Black))
+        if (carType2 == carcotrol.car(carType.Tinybit)) {
+            carcotrol.setNeoPixelColor(1, carcotrol.colors(RGBColors.Black))
+        } else {
+            carcotrol.setNeoPixelColor(2, carcotrol.colors(RGBColors.Black))
+            carcotrol.setNeoPixelColor(3, carcotrol.colors(RGBColors.Black))
+        }
     }
     patrolLeft = carcotrol.Line_Sensor(Position.Left)
     patrolRight = carcotrol.Line_Sensor(Position.Right)
